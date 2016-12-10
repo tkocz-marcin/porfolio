@@ -1,0 +1,177 @@
+.clearfix {
+  clear: both; }
+
+.text--primaryColor {
+  color: #ED5565; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+a {
+  color: #ED5565; }
+
+html {
+  font-size: 62.5%;
+  font-family: Lato;
+  color: white; }
+
+body {
+  background-image: url(../images/tlo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh; }
+
+.header .title {
+  text-align: center;
+  display: inline-block;
+  margin: 7vh 0vw 7vh 4vw;
+  font-size: 8rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ED5565;
+  position: relative; }
+  .header .title:after {
+    content: 'Marcin';
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 5px;
+    right: 2px; }
+
+.infoBox--back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .infoBox--back .infoBox {
+    width: 60vw;
+    height: 80vh;
+    padding: 10px;
+    margin: 10vh auto;
+    position: relative;
+    background: #020000;
+    border: 8px solid transparent;
+    border-top-color: #d54c5a;
+    border-right-color: #ED5565;
+    border-bottom-color: #ED5565;
+    border-left-color: #d54c5a;
+    box-shadow: 0px 0px 30px 1px #000;
+    -webkit-transition: opacity .5s;
+            transition: opacity .5s; }
+    .infoBox--back .infoBox h1 {
+      text-align: center;
+      margin: 9vh auto 14vh;
+      font-size: 5rem; }
+    .infoBox--back .infoBox p {
+      text-align: left;
+      font-size: 3rem;
+      line-height: 5rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-left: 4vw; }
+  .infoBox--back .btn__close {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    -webkit-animation: zoom 1s infinite linear;
+            animation: zoom 1s infinite linear; }
+    .infoBox--back .btn__close:before, .infoBox--back .btn__close:after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 17px;
+      background: #ED5565;
+      width: 5px;
+      height: 100%;
+      -webkit-transition: background .3s;
+              transition: background .3s; }
+    .infoBox--back .btn__close:after {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .infoBox--back .btn__close:before {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .infoBox--back .btn__close:hover:before, .infoBox--back .btn__close:hover:after {
+      background: #ff7f97; }
+
+.container {
+  margin: 5vh auto;
+  width: 80vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.box {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #ED5565;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  cursor: pointer;
+  position: relative; }
+  .box img {
+    width: 100%;
+    height: 100%; }
+  .box:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px #000; }
+  .box .link__more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 3rem;
+    -webkit-transition: color .3s;
+            transition: color .3s; }
+    .box .link__more:hover {
+      color: #fff; }
+
+.hide {
+  opacity: 0; }
+
+@-webkit-keyframes zoom {
+  0%, 100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  25%,75% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); } }
+
+@keyframes zoom {
+  0%, 100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  25%,75% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); } }
+
+/*# sourceMappingURL=style.css.map */
