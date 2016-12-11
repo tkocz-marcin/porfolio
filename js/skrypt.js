@@ -11,7 +11,7 @@ const popup = {
 			popupBox.setAttribute('class', 'infoBox');
 			btn.setAttribute('class', 'btn btn__close');
 
-			title.innerHTML = 'Dzień <span class="text--primaryColor">Dobry !</span>';
+			title.innerHTML = 'Witam <span class="text--primaryColor">!</span>';
 			p.innerHTML = 'Strona została stworzona <br/> aby zaprezentować <span class="text--primaryColor">kilka</span> <br/>wykonanych przez <span class="text--primaryColor">siebie</span> prac'
 
 			popupBox.appendChild(btn);
